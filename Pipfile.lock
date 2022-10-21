@@ -1,0 +1,57 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "c62fa3f461cf0167d0c10cb5b88dd6ae50ef4945c1d00508bb54039f74926a01"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.7"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "cloudio-common-python": {
+            "hashes": [
+                "sha256:6dd616520d2ebeb1c136e447fea2817ea0adbeb6696900cb7a067f1004f591e4",
+                "sha256:74f387a089cace6a6640a9cff75c6332db08e1eeba2ac250f53f4fb3caef9ba7"
+            ],
+            "index": "pypi",
+            "version": "==2.0.0"
+        },
+        "cloudio-endpoint-python": {
+            "hashes": [
+                "sha256:af5e11eb009ba420a8245bd90c1264117f63640bddc36dfd587493ed34950e2d",
+                "sha256:cc007ae6bbb8a6bc454c233d198a63d8dd879762bd7ee2823c3550a4735fd7cf"
+            ],
+            "index": "pypi",
+            "version": "==2.0.0"
+        },
+        "configobj": {
+            "hashes": [
+                "sha256:a2f5650770e1c87fb335af19a9b7eb73fc05ccf22144eb68db7d00cd2bcb0902"
+            ],
+            "version": "==5.0.6"
+        },
+        "paho-mqtt": {
+            "hashes": [
+                "sha256:2a8291c81623aec00372b5a85558a372c747cbca8e9934dfe218638b8eefc26f"
+            ],
+            "version": "==1.6.1"
+        },
+        "six": {
+            "hashes": [
+                "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
+                "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
+            ],
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "version": "==1.16.0"
+        }
+    },
+    "develop": {}
+}
