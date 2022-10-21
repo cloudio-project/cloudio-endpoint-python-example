@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 cloudio-endpoint-python = "*"
 cloudio-common-python = "*"
+cbor = "*"
 
 [dev-packages]
 

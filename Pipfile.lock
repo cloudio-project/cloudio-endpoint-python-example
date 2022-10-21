@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c62fa3f461cf0167d0c10cb5b88dd6ae50ef4945c1d00508bb54039f74926a01"
+            "sha256": "3e9b990957de049ea0fefe26378ae6d6affc1d9ef78815d324a7a5e82d996799"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,13 @@
         ]
     },
     "default": {
+        "cbor": {
+            "hashes": [
+                "sha256:13225a262ddf5615cbd9fd55a76a0d53069d18b07d2e9f19c39e6acb8609bbb6"
+            ],
+            "index": "pypi",
+            "version": "==1.0.0"
+        },
         "cloudio-common-python": {
             "hashes": [
                 "sha256:6dd616520d2ebeb1c136e447fea2817ea0adbeb6696900cb7a067f1004f591e4",
