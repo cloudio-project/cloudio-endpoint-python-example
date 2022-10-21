@@ -1,0 +1,2 @@
+cloudio-common-python==2.0.0
+cloudio-endpoint-python==2.0.0
