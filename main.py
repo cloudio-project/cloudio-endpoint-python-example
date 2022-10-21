@@ -46,7 +46,7 @@ class MyEndpoint(CloudioAttributeListener):
 
             self._i += 1
             self._i %= 100
-            time.sleep(0.5)
+            time.sleep(1)
 
     def attribute_has_changed(self, attribute, from_cloud: bool):
         self._i = attribute.get_value()
