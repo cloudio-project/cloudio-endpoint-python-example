@@ -8,6 +8,8 @@ class MyEndpoint(CloudioAttributeListener):
     def __init__(self, cloudio_endpoint_name='example'):
         super(MyEndpoint, self).__init__()
         self._i = 0
+
+        # Give the .properties file name and directory location
         self._endpoint = CloudioEndpoint(cloudio_endpoint_name, locations='path:config/')
 
     def initialize(self):
@@ -19,25 +21,28 @@ class MyEndpoint(CloudioAttributeListener):
     def _create_model(self):
         from cloudio.endpoint.runtime import CloudioRuntimeNode, CloudioRuntimeObject
 
+        # Create a node
         node = CloudioRuntimeNode()
 
+        # Adds an object
         props = CloudioRuntimeObject()
-        node.add_object('properties', props)
+        node.add_object('myObject', props)
 
-        self._datapoint = props.add_attribute('datapoint', float, 'measure')
-        self._setValue = props.add_attribute('setValue', float, 'setpoint')
+        # Adds attributes
+        self._my_measure = props.add_attribute('myMeasure', float, 'measure')
+        self._my_setpoint = props.add_attribute('mySetPoint', float, 'setpoint')
 
-        self._setValue.add_listener(self)
+        # Adds a listener on the setpoint
+        self._my_setpoint.add_listener(self)
 
+        # Finally adds the node to the endpoint
         self._endpoint.add_node('myNode', node)
-
-        self._endpoint.get_node('')
 
     def exec(self):
         self._i = 0
         while True:
             print('Value is: ' + str(self._i))
-            self._datapoint.set_value(self._i)
+            self._my_measure.set_value(self._i)
 
             self._i += 1
             self._i %= 100
